@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "browser-sync": "^2.29.3",
+    "eslint": "^8.45.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-clean-css": "^4.3.0",
