@@ -1,0 +1,552 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            width: 100% !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+            line-height: 100%;
+        }
+
+        [style*="Arial"] {
+            font-family: 'Arial', Verdana, Tahoma, sans-serif !important;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+            border: none;
+            -ms-interpolation-mode: bicubic;
+            max-width: 100% !important;
+            margin: 0;
+            padding: 0;
+            display: block;
+        }
+
+        table td {
+            border-collapse: collapse;
+        }
+
+        table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        .header {
+            padding-top: 28px;
+            border-spacing: 0;
+        }
+
+        .logo {
+            padding-bottom: 28px;
+        }
+
+        .main_bg {
+            background-image: url('http://cv87838.tw1.ru/1.6_html-email/main_bg.jpg');
+            background-repeat: no-repeat;
+            width: 600px;
+            height: 300px;
+        }
+
+        .padding-32 {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+        .padding-15 {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .pb-34 {
+            padding-bottom: 34px;
+            border-spacing: 0;
+        }
+
+        .pb-13 {
+            padding-bottom: 13px;
+            border-spacing: 0;
+        }
+
+        .padding-26 {
+            padding-top: 26px;
+            padding-bottom: 26px;
+        }
+
+        .padding-12 {
+            padding-top: 12.5px;
+            padding-bottom: 12.5px;
+        }
+
+        .padding-5 {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .pb-11 {
+            padding-bottom: 11px;
+            border-spacing: 0;
+        }
+
+        .pb-21 {
+            padding-bottom: 21px;
+        }
+
+        .pb-17 {
+            padding-bottom: 17px;
+        }
+
+        .padding-space {
+            padding-right: 27px;
+        }
+
+        .mb-11 {
+            margin-bottom: 11px;
+        }
+
+        .title {
+            margin: 0;
+            font-style: normal;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #515151;
+        }
+
+        .title-h2 {
+            margin: 0;
+            font-style: normal;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #FFF;
+        }
+
+        .title-h3 {
+            margin: 0;
+            margin-bottom: 8px;
+            font-style: normal;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #FFF;
+        }
+
+        .title-bottom {
+            margin: 0;
+            font-style: normal;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #515151;
+        }
+
+        .descr {
+            margin: 0;
+            font-style: normal;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #515151;
+        }
+
+        .descr-img {
+            margin: 0;
+            font-style: normal;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            color: #FFF;
+        }
+
+        .descr-bottom {
+            margin: 0;
+            min-width: 138px;
+            font-style: normal;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            color: #515151;
+        }
+
+        .img {
+            margin-bottom: 21px;
+        }
+
+        .button {
+            width: 240px;
+            height: 45px;
+            border-radius: 48px;
+            background-color: #9D5CD0;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        .button a {
+            line-height: 0%;
+            width: 100%;
+            height: 100%;
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        .text-footer {
+            margin: 0;
+            text-align: center;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            color: #757575;
+        }
+
+        .text-link {
+            margin: 0;
+            text-align: center;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            color: #757575;
+        }
+
+        .text-link a {
+            text-align: center;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            text-decoration-line: underline;
+            color: #9D5CD0;
+        }
+
+        @media (max-width: 576px) {
+            .table-600 {
+                width: 280px !important;
+            }
+
+            .table-520 {
+                width: 244px !important;
+            }
+
+            .mobile {
+                display: block !important;
+            }
+
+            .padding-space {
+                padding-right: 0;
+            }
+
+            .logo {
+                width: 114px;
+                padding-bottom: 17px;
+            }
+
+            .header {
+                padding-top: 17px;
+            }
+
+            .main_bg {
+                background-image: url('http://www.cv87838.tw1.ru/1.6_html-email/main_bg_media.jpg');
+                background-repeat: no-repeat;
+                width: 280px;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+    <div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Тестовое
+        письмо</div>
+
+    <table cellpadding="0" cellspacing="0" class="table-600" width="600" bgcolor="#FFFFFF" align="center">
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" class="table-600" width="600" bgcolor="#000000">
+                    <tr>
+                        <td align="center" class="header">
+                            <img src="http://cv87838.tw1.ru/1.6_html-email/logo.png" alt="logo" class="logo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="main_bg"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" class="table-600" width="600" bgcolor="#FFFFFF">
+                    <tr>
+                        <td class="padding-32" align="center">
+                            <table cellpadding="0" cellspacing="0" class="table-520" width="520">
+                                <tr>
+                                    <td class="pb-13">
+                                        <h1 class="title" style="font-family: Arial, Verdana, Tahoma, sans-serif;">
+                                            Торжество импрессионизма
+                                        </h1>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pb-13">
+                                        <p class="descr" style="font-family: Arial, Verdana, Tahoma, sans-serif;">
+                                            Опыт говорит нам, что семантический разбор внешних противодействий требует
+                                            анализа новых принципов формирования материально-технической и&nbsp;кадровой
+                                            базы.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="descr" style="font-family: Arial, Verdana, Tahoma, sans-serif;">
+                                            Задача организации, в&nbsp;особенности&nbsp;же внедрение современных
+                                            методик, в&nbsp;своём классическом представлении, допускает внедрение
+                                            глубокомысленных рассуждений. Есть над чем задуматься: элементы
+                                            политического процесса преданы социально-демократической анафеме!
+                                            Но&nbsp;интерактивные прототипы заблокированы в&nbsp;рамках своих
+                                            собственных рациональных ограничений. Сторонники тоталитаризма в&nbsp;науке
+                                            ограничены исключительно образом мышления.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" class="table-600" width="600" bgcolor="#000000">
+                    <tr>
+                        <td class="padding-26" align="center">
+                            <table cellpadding="0" cellspacing="0" class="table-520" width="520">
+                                <tr>
+                                    <td class="pb-21">
+                                        <h2 class="title-h2" style="font-family: Arial, Verdana, Tahoma, sans-serif;">
+                                            Представленные художники
+                                        </h2>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pb-21">
+                                        <img src="http://www.cv87838.tw1.ru/1.6_html-email/first.jpg" alt="Поль Гоген"
+                                            class="img">
+                                        <h3 class="title-h3" style="font-family: Arial, Verdana, Tahoma, sans-serif;">
+                                            Поль Гоген
+                                        </h3>
+                                        <p class="descr-img" style="font-family: Arial, Verdana, Tahoma, sans-serif;">
+                                            Прежде всего, разбавленное изрядной долей эмпатии, рациональное
+                                            мышление в
+                                            значительной степени обусловливает важность укрепления моральных
+                                            ценностей.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pb-21">
+                                        <img src="http://www.cv87838.tw1.ru/1.6_html-email/second.jpg"
+                                            alt="Огюст Ренуар" class="img">
+                                        <h3 class="title-h3" style="font-family: Arial, Verdana, Tahoma, sans-serif;">
+                                            Огюст Ренуар
+                                        </h3>
+                                        <p class="descr-img" style="font-family: Arial, Verdana, Tahoma, sans-serif;">
+                                            А&nbsp;также сделанные на&nbsp;базе интернет-аналитики выводы освещают
+                                            чрезвычайно интересные особенности картины в&nbsp;целом.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pb-21">
+                                        <img src="http://www.cv87838.tw1.ru/1.6_html-email/third.jpg" alt="Клод Моне"
+                                            class="img">
+                                        <h3 class="title-h3" style="font-family: Arial, Verdana, Tahoma, sans-serif;">
+                                            Клод Моне
+                                        </h3>
+                                        <p class="descr-img" style="font-family: Arial, Verdana, Tahoma, sans-serif;">
+                                            Современная методология разработки однозначно фиксирует необходимость
+                                            системы массового участия.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pb-21">
+                                        <img src="http://www.cv87838.tw1.ru/1.6_html-email/fourth.jpg" alt="Эдуард Мане"
+                                            class="img">
+                                        <h3 class="title-h3" style="font-family: Arial, Verdana, Tahoma, sans-serif;">
+                                            Эдуард Мане
+                                        </h3>
+                                        <p class="descr-img" style="font-family: Arial, Verdana, Tahoma, sans-serif;">
+                                            Но&nbsp;социально-экономическое развитие является качественно новой ступенью
+                                            вывода текущих активов.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="http://www.cv87838.tw1.ru/1.6_html-email/fifth.jpg"
+                                            alt="Винсент Ван Гог" class="img">
+                                        <h3 class="title-h3" style="font-family: Arial, Verdana, Tahoma, sans-serif;">
+                                            Винсент Ван Гог
+                                        </h3>
+                                        <p class="descr-img" style="font-family: Arial, Verdana, Tahoma, sans-serif;">
+                                            Повседневная практика показывает, что разбавленное изрядной долей эмпатии,
+                                            рациональное мышление требует анализа поставленных обществом задач.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" class="table-600" width="600" bgcolor="#FFFFFF">
+                    <tr>
+                        <td class="padding-32" align="center">
+                            <table cellpadding="0" cellspacing="0" class="table-520" width="520">
+                                <tr>
+                                    <td class="pb-11">
+                                        <h2 class="title-bottom"
+                                            style="font-family: Arial, Verdana, Tahoma, sans-serif;">
+                                            И это ещё не всё!
+                                        </h2>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pb-34">
+                                        <table cellpadding="0" cellspacing="0" class="table-520" width="489">
+                                            <tr>
+                                                <td class="padding-space pb-17 mobile">
+                                                    <img src="http://www.cv87838.tw1.ru/1.6_html-email/check-square.png"
+                                                        alt="check" class="mb-11">
+
+                                                    <p class="descr-bottom"
+                                                        style="font-family: Arial, Verdana, Tahoma, sans-serif;">
+                                                        Уникальные подборки работ с&nbsp;авторскими рецензиями
+                                                    </p>
+                                                </td>
+                                                <td class="padding-space pb-17 mobile">
+                                                    <img src="http://www.cv87838.tw1.ru/1.6_html-email/calendar.png"
+                                                        alt="calendar" class="mb-11">
+
+                                                    <p class="descr-bottom"
+                                                        style="font-family: Arial, Verdana, Tahoma, sans-serif;">
+                                                        Возможность настроить нашу рассылку под свой личный вкус
+                                                    </p>
+                                                </td>
+                                                <td class="padding-space mobile">
+                                                    <img src="http://www.cv87838.tw1.ru/1.6_html-email/arrow-up-circle.png"
+                                                        alt="arrow up" class="mb-11">
+
+                                                    <p class="descr-bottom"
+                                                        style="font-family: Arial, Verdana, Tahoma, sans-serif;">
+                                                        У&nbsp;вас есть пожелания и&nbsp;предложения?
+                                                        Напишите нам в&nbsp;ответ на&nbsp;это письмо!
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td class="button" align="center">
+                                                    <a href="#"
+                                                        style="font-family: Arial, Verdana, Tahoma, sans-serif;">Узнать
+                                                        все подробности</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" class="table-600" width="600" bgcolor="#000">
+                    <tr>
+                        <td align="center" class="padding-15">
+                            <table cellpadding="0" cellspacing="0" width="247">
+                                <tr>
+                                    <td align="center" class="padding-12">
+                                        <table cellpadding="0" cellspacing="0" width="143">
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="#">
+                                                        <img src="http://www.cv87838.tw1.ru/1.6_html-email/vk.png"
+                                                            alt="VK">
+                                                    </a>
+                                                </td>
+                                                <td align="center">
+                                                    <a href="#">
+                                                        <img src="http://www.cv87838.tw1.ru/1.6_html-email/instagram.png"
+                                                            alt="Instagram">
+                                                    </a>
+                                                </td>
+                                                <td align="center">
+                                                    <a href="#">
+                                                        <img src="http://www.cv87838.tw1.ru/1.6_html-email/fb.png"
+                                                            alt="Facebook">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <p class="text-footer" style="font-family: Arial, Verdana, Tahoma, sans-serif;">
+                                            Blanchard &copy;&nbsp;2020&nbsp;/ Все права защищены</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" class="table-600" width="600" bgcolor="#EBEBEB">
+                    <tr>
+                        <td align="center" class="padding-5">
+                            <table cellpadding="0" cellspacing="0" width="247">
+                                <tr>
+                                    <td align="center">
+                                        <p class="text-link" style="font-family: Arial, Verdana, Tahoma, sans-serif;">
+                                            Вы&nbsp;можете
+                                            так&nbsp;же <a href="#">отписаться от&nbsp;рассылки</a>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
