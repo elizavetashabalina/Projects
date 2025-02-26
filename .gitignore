@@ -39,8 +39,9 @@ list_students_app/backend/
 *.map
 
 # MAILER
-smartrun_website/phpmailer/
-smartrun_website/smart.php
+smartrun_website/mailer/
+smartrun_website/mailer/phpmailer/
+smartrun_website/mailer/smart.php
 
 # Gulp cache and temp files
 .cache/
