@@ -1,0 +1,462 @@
+@media (max-width: 1439px) {
+    .sidepanel {
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            column-gap: 30px;
+            row-gap: 20px;
+        }
+        &__skills {
+            column-gap: 20px;
+            grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 220px);
+            column-gap: 20px;
+            &-item {
+                grid-template-columns: 40px 195px;
+                column-gap: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .hamburger {
+    position: absolute;
+    top: 20px;
+    right: auto;
+    left: 30px;
+    height: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #151812;
+    }
+    span.long {
+        width: 36px;
+    }
+    }
+    .container {
+        max-width: 720px;
+    }
+    .title {
+        &_fz36 {
+            font-size: 30px;
+            line-height: 42px;
+            margin-top: 26px;
+        }
+        &_fz36-about {
+            margin-top: 26px;
+        }
+    }
+    .divider {
+        margin: 15px auto 0 auto;
+    }
+    .portfolio {
+        padding-top: 80px;
+    &__scale {
+        &:hover {
+            transform: scale(1.05);
+        }
+        &:focus {
+            transform: scale(1.05);
+        }
+    }
+    }
+    .about {
+        padding-top: 40px;
+        .divider {
+            margin: 15px auto 0 auto;
+        }
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+        }
+        &__skills {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            max-width: 600px;
+                &-item {
+                display: flex;
+                align-items: center;
+                text-align: left;
+                gap: 15px;
+                }
+        }
+        &__photo {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            max-width: 280px; 
+        }
+        &__descr {
+            max-width: 600px;
+            text-align: center;
+        }
+        &__title {
+            @include before_circle; /* Применяем mixin в медиа-запросе */
+            &:before {
+                top: -6px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+    position: absolute;
+    top: 20px;
+    right: auto;
+    left: 30px;
+    height: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #151812;
+    }
+    span.long {
+        width: 36px;
+    }
+    }
+    .container {
+        max-width: 540px;
+    }
+    .title {
+        &_fz48 {
+            font-size: 28px;
+        }
+    }
+
+    .promo {
+        background: url('../img/main_bg_media.jpg') no-repeat 10%/cover;
+        &__title {
+            line-height: 39px;
+            width: 300px;
+        }
+    }
+    
+    .portfolio {
+        padding-top: 40px;
+        &__container{
+            margin-top: 40px;
+        }
+    }
+    .about {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+        }
+        &__photo {
+            max-width: 250px; /* Уменьшаем фото */
+        }
+        &__descr {
+            max-width: 100%;
+        }
+    }
+}
+    
+}
+
+@media (max-width: 576px) {
+    .hamburger {
+        position: absolute;
+        top: 20px;
+        right: auto;
+        left: 20px;
+        height: 21px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        span {
+            display: block;
+            width: 30px;
+            height: 3px;
+            background: #151812;
+        }
+        span.long {
+            width: 36px;
+        }
+        }
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .title {
+        &_fz48 {
+            font-size: 26px;
+            line-height: 30px;
+            font-weight: normal;
+        }
+        &_fz36 {
+            font-size: 24px;
+            line-height: 36px;
+        }
+        &_fz36-about {
+            font-size: 24px;
+            line-height: 20px;
+        }
+        &_fz24-about {
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+   
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 20px;
+        }
+    }
+    .promo {
+        padding-top: 130px;
+        background: url('../img/main_bg_media1.jpg') no-repeat 10%/cover;
+        &__btns {
+            margin-top: 15px;
+            // justify-content: center;
+        }
+        &__img {
+            display: flex;
+            max-width: 200px;
+            margin-bottom: 15px; 
+        }
+        &__container {
+            display: flex;
+            flex-direction: column; /* Элементы идут вертикально */
+            align-items: center; /* Центрируем по горизонтали */
+            text-align: center;
+        }
+    }
+    .about {
+        padding-top: 40px;
+        .divider {
+            margin: 15px auto 0 auto;
+        }
+        &__wrapper {
+            display: flex; /* Изменяем с grid на flex */
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 20px; 
+        }
+        &__photo {
+            display: none;
+        }
+        &__skills {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            &-item {
+                display: flex;
+            align-items: center;
+            gap: 15px;
+            text-align: left; 
+            }
+        }
+        &__descr {
+            width: 100%;
+            max-width: 600px; /* Делаем текстовый блок уже */
+            text-align: center;
+        }
+    }
+    
+    .portfolio {
+        &__item {
+            height: 100%;
+            width: 100%;
+            
+        }
+        img {
+            position: absolute;
+            min-height: 100%;
+            min-width: 100%;
+        }
+        &__container{
+            margin-top: 20px;
+        }
+        &__horizonal {
+            object-fit: cover; 
+        }
+        &__text {
+            opacity:0;
+            position:absolute;
+            transition: 0.5s;
+            width: 100%;
+            height: 100%;
+            font-size:22px;
+            background-color:rgba(0, 0, 0, 0.2);
+            text-align:center;
+            color:#fefefe;
+        }
+        &__scale {
+            display: inline-block;
+            overflow: hidden; 
+            margin:0 auto;
+            position: relative;
+            width: 100%;
+            }
+            &__texthorizonal {
+            opacity:0;
+            position:absolute;
+            bottom:0;
+            left:50%;
+            transform:translate(-50%, 0);
+            transition: 0.5s;
+            width:280px;
+            height: 280px;
+            font-size:22px;
+            background-color:rgba(0, 0, 0, 0.2);
+            padding:160px 5px;
+            text-align:center;
+            color:#fefefe;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .hamburger {
+        position: absolute;
+        top: 20px;
+        right: auto;
+        left: 10px;
+        height: 21px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        span {
+            display: block;
+            width: 30px;
+            height: 3px;
+            background: #151812;
+        }
+        span.long {
+            width: 36px;
+        }
+        }
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .title {
+        &_fz48 {
+            font-size: 26px;
+        }
+        &_fz36 {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+   
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 20px;
+        }
+        &__social {
+            bottom: 90px;
+        }
+    }
+    .promo {
+        background: url('../img/main_bg_media2.jpg') no-repeat 10%/cover;
+        &__btns {
+            margin-top: 30px;
+        }
+        &__subtitle {
+            @include before_circle; /* Применяем mixin в медиа-запросе */
+            &:before {
+                top: -6px;
+                left: 19%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template: 340px auto auto / 1fr;
+        }
+        &__skills {
+            grid-template-columns: 1fr;
+        }
+        &__text {
+            font-size: 16px;
+        line-height: 22px;
+        text-align: center; /* Выравниваем по центру */
+        padding: 0 10px;
+        }
+    }
+    .portfolio {
+        &__item {
+            height: 100%;
+            width: 100%;
+            
+        }
+        img {
+            position: absolute;
+            min-height: 100%;
+            min-width: 100%;
+        }
+        &__horizonal {
+            object-fit: cover; 
+        }
+        &__text {
+            opacity:0;
+            position:absolute;
+            transition: 0.5s;
+            width: 100%;
+            height: 100%;
+            font-size:22px;
+            background-color:rgba(0, 0, 0, 0.2);
+            text-align:center;
+            color:#fefefe;
+        }
+        &__scale {
+            display: inline-block;
+            overflow: hidden; 
+            margin:0 auto;
+            position: relative;
+            width: 100%;
+            }
+            &__texthorizonal {
+            opacity:0;
+            position:absolute;
+            bottom:0;
+            left:50%;
+            transform:translate(-50%, 0);
+            transition: 0.5s;
+            width:280px;
+            height: 280px;
+            font-size:22px;
+            background-color:rgba(0, 0, 0, 0.2);
+            padding:160px 5px;
+            text-align:center;
+            color:#fefefe;
+        }
+    }
+}
+
